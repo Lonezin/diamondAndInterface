@@ -1,14 +1,14 @@
 namespace HerancaMultipla.Devices
 {
-    public class Scanner : Device
+    public class Scanner : Device, IScanner
     {
         public override void ProcessDoc(string doc)
         {
             System.Console.WriteLine($"Scanner processing: {doc}");
         }
-        public string Scan(string scan)
+        public string Scan()
         {
-            return "Scanner scna result";
+            return "Scanner scan result";
         }
     }
 }
